@@ -31,3 +31,33 @@ biciclettaEL.innerText= "La bicicletta con il peso minore è " + lightBike.nome;
 
 
 
+// Array di oggetti "squadre"
+const teams = [
+  { nome: "Juventus", punti: 0, falliSubiti: 0 },
+  { nome: "Inter", punti: 0, falliSubiti: 0 },
+  { nome: "Milan", punti: 0, falliSubiti: 0 },
+  { nome: "Napoli", punti: 0, falliSubiti: 0 },
+  { nome: "Roma", punti: 0, falliSubiti: 0 },
+  { nome: "Lazio", punti: 0, falliSubiti: 0 },
+  { nome: "Atalanta", punti: 0, falliSubiti: 0 },
+  { nome: "Fiorentina", punti: 0, falliSubiti: 0 },
+  { nome: "Torino", punti: 0, falliSubiti: 0 },
+  { nome: "Bologna", punti: 0, falliSubiti: 0 }
+];
+
+
+for (let i = 0; i < teams.length; i++) {
+
+    let team = teams[i];
+
+    teams[i].punti = Math.floor(Math.random() * 100);
+    teams[i].falliSubiti = Math.floor(Math.random() * 10);    
+
+};
+
+const nameFouls = []
+
+nameFouls.push(teams[i].nome);
+nameFouls.push(teams[i].falliSubiti);
+
+console.log(nameFouls);
