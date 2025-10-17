@@ -18,11 +18,16 @@ let lightBike = bikes[0];
 for (let i = 0; i < bikes.length; i++) {
     let bike = bikes[i];
     
-    if (lightBike.peso >= bike.peso) {
+    if (lightBike.peso > bike.peso) {
         lightBike = bike;
     }
 
+};
 
-}
+console.log(lightBike);
+
+const biciclettaEL = document.getElementById("bicicletta");
+biciclettaEL.innerText= "La bicicletta con il peso minore è " + lightBike.nome;
+
 
 
